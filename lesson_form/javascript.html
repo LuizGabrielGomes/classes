@@ -9,21 +9,45 @@
 
     <label for="age">age</label>
     <input type="number" id="age" value="0"/>
-    <button onclick="calculo()" type="submit">save</button> 
+    <!-- na tag input e onde o usuario digitara a idade. com adicao do atributo id e possivel acessar
+    atraves do comando document.getElementById("age") o valor digitado pelo usuario -->
+
+
+    <button onclick="calculo()" type="submit">Verificar</button> 
+    <!-- Ao clicar no botao o javascript executa a funcao que estiver dentro do onclick "calculo()" -->
 
     <p id="results"></p>
+    <!-- aqui e o paragrafo que mostrara o resultado do codigo executado abaixo. Para isso dentro da tag "p" foi add o atributo id 
+        para que no codigo abaixo seja possivel acessar a tag atraves do comando document.getElementById("results") -->
 
     <script>
+    // o codigo javascript deve ser escrito dentro da tag script 
 
         function calculo() {
+            // fuction serve para executar um bloco de codigo (tudo que for digitado dentro dela ) toda vez que for executada 
+            // a palavra function e uma palavra reservada para criar uma funcao 
+            // apos a palavra function deve vir o nome da funcao 
+
             const age = document.getElementById("age").value
+            // esta linkando com com a linha 11(pegando informacao digitada dentro do input e armazenando na variavel "age")
+            
+            console.log(age);
+            // esse comando exibe no console do navegador a informacao armazenada na variavel age
             
             const maioridade = 18
+            // variavel que armazena o numero 18
 
             if ( age >= maioridade) {
+                // se o valor armazenado dentro da variavel "age" for >= (maior ou igual) ao valor armazenado na variavel
+                //  "maioridade" executa o codigo abaixo
                 document.getElementById("results").textContent = "maior que 18 anos"
-            
+                // document e o comando para acessar a pagina inteira 
+                // getElementById pega o elemento (tag) com o id results
+                // o comando textContent acessa o conteudo de texto da tag 
+                // por ultimo o valor digitado depois do simbolo de = e o novo valor que sera atribuido a tag com a id results 
             } else {
+                // caso o valor armazenado dentro da variavel "age" NAO FOR >= (maior ou igual) ao valor armazenado na variavel
+                //  "maioridade" executa o codigo abaixo
                 document.getElementById("results").textContent = "menor que 18 anos"
             }
 
