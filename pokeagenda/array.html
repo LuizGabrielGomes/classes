@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   
+    <script>
+   
+        const languages = ["javascript", "java", "kotlin"]
+
+        const length = languages.length  // para saber o tamanho do array  
+        
+        console.log(length) 
+        
+        const firstElement = languages[0] // para acessar o primeiro elemento do array 
+         
+        console.log(firstElement)
+
+        const thirdElement = languages[2] // para acessar o terceiro elemento do array
+
+        console.log(thirdElement) 
+
+        const fourthElement = languages[3] // para acessar o quarto elemento do array que nesse caso nao existe 
+
+        languages[1] = "rust" // para alterar o segundo elemento de java para rust
+
+        console.log(languages)
+
+        languages.push("python") // para adicionar python na ultima posicao do array 
+
+        console.log(languages) 
+        
+        languages.pop() // para remover (python) da ultima posicao do array 
+
+        console.log(languages)
+          // o metodo splice serve para adicionar ou remover elementos de qualquer posicao do array.
+        languages.splice(2,0,"scala","c#") // nesse caso o splice esta adicionando dois elementos apartir da segunda posicao e nao esta deletando nenhum elemnto 
+        console.log(languages)
+
+        languages.splice(1,2) // removendo dois elementos a partir da posicao 1  
+
+        console.log(languages)
+
+        languages.splice(0,2,"go","typescript") // nesse caso o splice esta adicionando dois elementos e removendo dois elementos a partir da posicao 0  
+
+        console.log(languages)
+
+
+
+
+
+
+
+    </script>
+
+
+
+
+
+
+  
+</body>
+</html>

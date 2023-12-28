@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pokeagenda</title>
+</head>
+<body>
+    <script>
+    
+        async function fetchpokemon(){
+            const pokemon = await fetch("https://pokeapi.co/api/v2/pokemon/150").then(response => {
+                return response.json()
+            })
+
+            console.log(pokemon);
+        }
+
+        fetchpokemon()
+        
+        // Promise.all(fetchpokemon()).then(pokemons => 
+        //     pokemons.map(pokemon => console.log(pokemon))
+        // ) 
+
+        Promise.all(fetchpokemon()).then(pokemon => { console.log(pokemon) });
+
+
+    </script>
+
+    <div>
+        <img src="" alt="">
+    </div>
+
+
+
+
+
+
+</body>
+</html>

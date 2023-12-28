@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+<script>
+
+    const user = {
+        name: "luiz",
+        surname: "gabriel",
+        age: 22
+
+    }
+
+    console.log(user)
+    //como acessar uma propriedade do objeto
+    // opcao 1 
+    console.log(user.age)
+
+    //opcao 2  
+    console.log(user["age"])
+
+    // como modificar a propriedade do objeto
+    // opcao 1
+    user.surname = "gomes"
+    console.log(user)
+    // opcao 2
+    user["name"] = "carlos"
+    console.log(user)
+    //como deletar a propriedade do objeto  
+    delete user.name 
+    console.log(user)
+
+
+</script>
+
+
+
+
+
+
+
+</body>
+</html>
