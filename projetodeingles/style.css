@@ -10,28 +10,44 @@ body {
     font-family: system-ui;
 }
 
+.container {
+    padding: 40px;
+}
+
+.container-buttons {
+    margin-top: 10px;
+    padding-top: 10px;
+    padding-bottom: 20px;
+}
 
 .button {
-    background-color: #0d6efd;
-    color: white;
     border-radius: 5px;
     padding: 20px;
-    width: 110px
+    width: 110px;
 }
 
 .title {
-    background-color: #7d95de;
     padding: 20px;
 }
 
-.alternatives {
-    background-color: #e5e7eb;
-}
+/* .alternatives {
+    
+} */
 
-.paragraph:hover {
-    background-color: yellow;
-}
 
 .paragraph {
-    padding: 10px
+    background-color: #e5e7eb;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+
+.paragraph:hover {
+     background-color: yellow;
+}
+
+.input-radio {
+
+    margin-right: 10px;
+
 }
