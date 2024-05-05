@@ -12,8 +12,8 @@
     
    
 
- let text = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
- let length = text.length;
+ const text = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+ const length = text.length;
 
  console.log(length)
 
@@ -37,3 +37,20 @@ console.log(retorno)
 // function myFunction(a, b) {
 //   return a * b;
 // }
+
+
+
+
+
+
+// Criar uma funcao que receba os parametros "nome", "nomeDoMeio" e "sobrenome" e concatene cada retornando o novo valor para a variavel "nomeCompleto".
+
+
+function names(nome, nomeDoMeio, sobrenome){
+    return nome + " " + nomeDoMeio  + " " + sobrenome
+
+}
+
+console.log(names("luiz", "Gabriel", "Gomes"));
+
+
